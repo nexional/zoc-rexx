@@ -1,0 +1,31 @@
+{
+    "name": "rexx",
+    "displayName": "zoc-rexx",
+    "description": "ZOC Terminal REXX Language",
+    "version": "0.0.1",
+    "publisher": "nexional",
+    "icon": "icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nexional/zoc-rexx.git"
+	},
+    "engines": {
+        "vscode": "^1.15.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "rexx",
+            "aliases": ["REXX", "rexx"],
+            "extensions": [".zrx"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "rexx",
+            "scopeName": "source.rexx",
+            "path": "./syntaxes/rexx.tmLanguage"
+        }]
+    }
+}
